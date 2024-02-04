@@ -6,7 +6,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Sabboshachi Sarkar</title>
-  <meta content="" name="descriptison">
+  <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
@@ -17,19 +17,19 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Personal - v2.3.0
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+  <!-- =======================================================g
+  * Template Name: iPortfolio - v3.3.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
@@ -37,1189 +37,797 @@
 
 <body>
 
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
   <!-- ======= Header ======= -->
-  <header id="header" class="header-tops">
-    <div class="container">
+  <header id="header">
+    <div class="d-flex flex-column">
 
-      <h1><a href="index.html">Sabboshachi Sarkar</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-      <h2>I'm a passionate <span>Web Developer</span></h2>
-
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="#header">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#resume">Resume/CV</a></li>
-          <li><a href="#services">Projects</a></li>
-          <li><a href="#portfolio">Achievements</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li></li>
-        </ul>
-        
-      </nav><!-- .nav-menu -->
-      <br>
-      <a href="https://www.upwork.com/freelancers/~01b1592513649c1be0" target="_blank"><button type="button" class="btn btn-primary">Hire Me</button></a>
-
-      <div class="social-links">
-        <a href="https://twitter.com/sabboshachi71" target="_blank" class="twitter"><i class="icofont-twitter"></i></a>
-        <a href="https://www.facebook.com/Sabboshachi/" target="_blank"  class="facebook"><i class="icofont-facebook"></i></a>
-        <a href="https://www.instagram.com/_sabboshachi_/"  target="_blank" class="instagram"><i class="icofont-instagram"></i></a>
-        <a href="https://github.com/sabboshachi"  target="_blank" class="google-plus"><i class="icofont-github"></i></a>
-        <a href="https://www.linkedin.com/in/sabboshachi-sarkar-8b5573154/"  target="_blank" class="linkedin"><i class="icofont-linkedin"></i></a>
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Sabboshachi Sarkar</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://www.researchgate.net/profile/Sabboshachi-Sarkar" class="twitter" target="_blank"><i class='bx bxs-graduation'></i></a>
+          <a href="https://www.facebook.com/Sabboshachi/" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
+          <a href="https://github.com/sabboshachi" class="google-plus" target="_blank"><i class="bx bxl-github"></i></a>
+          <a href="https://www.instagram.com/_sabboshachi_/" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/sabboshachi-sarkar-8b5573154" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+        </div>
       </div>
 
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume/CV</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Blog</span></a></li>
+          <!-- <li><a href="index_photography.html" target = "_blank" class="nav-link scrollto" ><i class="bx bx-camera"></i> <span>Gallery Showcase</span></a></li> -->
+          <li><a href="#testimonials" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Courses & Workshops</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+          <br>
+        </ul>
+      </nav><!-- .nav-menu -->
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about">
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Sabboshachi Sarkar</h1>
+      <p>I'm <span class="typed" data-typed-items="A Machine Learning Enthusiast , An Engineer, A Freelancer, A Traveller"></span></p>
+    </div>
+  </section><!-- End Hero -->
 
-    <!-- ======= About Me ======= -->
-    <div class="about-me container">
+  <main id="main">
 
-      <div class="section-title">
-        <h2>About</h2>
-        <p>Learn more about me</p>
-      </div>
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
 
-      <div class="row">
-        <div class="col-lg-4" data-aos="fade-right">
-          <img src="assets/img/pp.jpg" class="img-fluid" alt="">
+        <div class="section-title">
+          <h2>About</h2>
         </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>Web Developer</h3>
-<!--          
-          <p class="font-italic">
-            Currently, I am a student in the Department of Electronics &amp; Telecommunication Engineering at Rajshahi University of Engineering &amp; Technology (RUET).
-          </p>
 
-          <div class="row">
-            <div class="col-lg-6">
-              <ul>
-                
-                <li><i class="icofont-rounded-right"></i> <strong>Website:</strong> halfbyte.tech</li>
-                <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +88 01768 457598</li>
-                <li><i class="icofont-rounded-right"></i> <strong>City:</strong> Rajshahi, Bangladesh</li>
-              </ul>
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/profile-img_2.jpeg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <p align="justify">
+              Hello, I'm Sabboshachi Sarkar. <br>
+              <!-- I am a recent graduate with a BSc. degree in Electronics & Telecommunication 
+              Engineering from Rajshahi University of Engineering & Technology (RUET). 
+              A dedicated and self-motivated individual, I have a strong passion for technology, 
+              research, and innovation. My academic journey has equipped me with a solid foundation 
+              in electronics, and I am currently immersed in the dynamic field of Machine Learning research.<br>
+              Driven by a relentless curiosity, I thrive on the challenges presented by Competitive Programming, 
+              Data Science, and Machine Learning. My enthusiasm for research extends beyond the classroom, as evidenced 
+              by my ongoing senior thesis on Supervised Machine Learning. I bring not only technical expertise but also 
+              strong leadership qualities cultivated through leading various campus clubs and societies. -->
+            </p>
+            <div class="row">
+              <div class="">
+             
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Education:</strong> <span>Recent Electronics & Telecommunication Engineering graduate from RUET. </span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Passion:</strong> <span>Self-motivated tech enthusiast, diving deep into Data Science, and Machine Learning.</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Current Focus:</strong> <span>Senior thesis on Supervised Machine Learning, exploring the cutting edge.</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Code Palette:</strong> <span>Proficient in Python, with projects spanning Machine Learning and Data Science.</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Collaboration:</strong> <span>Leader in campus clubs, bringing strong teamwork skills.</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>GitHub Explorer:</strong> <span>Check out my repos for a journey through tech, projects, and problem-solving.</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Seeking Opportunities:</strong> <span>Actively seeking internships or part-time roles to contribute and grow.</span></li>
+                </ul>
+              </div>
+              <!-- <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelors</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>sabboshachi.ruet@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div> -->
             </div>
-            <div class="col-lg-6">
-              <ul>
-                
-                <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> Bachelors</li>
-                <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> sabboshachi.ruet@gmail.com</li>
-                <li><i class="icofont-rounded-right"></i> <strong>Freelance:</strong> Available</li>
-              </ul>
-            </div>
-          </div>
--->
-
-          <p class="text-justify">
-            Hi, I’m Sabboshachi Sarkar. <br>
-            Currently pursuing my engineering degree in Electronics &amp; Telecommunication Engineering from Rajshahi University of Engineering &amp; Technology. <br>
-            I'm a self-motivated tech-geek who is enthusiastic about Web Development. I have 1 year+ experience in  Web Development. I also have experience in making electronics projects and have done a numerous projects which helped me gain exposure in the tech world. <br>
-            Through juggling between studies and exploring myself in various circumstances, I developed my technical skills, communication skills, organization, and management skills as well as public speaking.<br>
-          <br>
-
-          </p>
-        </div>
-      </div>
-
-    </div><!-- End About Me -->
-
-    <!-- ======= Counts ======= -->
-     <!--<div class="counts container">
-
-      <div class="row">
-
-        <div class="col-lg-3 col-md-6">
-          <div class="count-box">
-            <i class="icofont-simple-smile"></i>
-            <span data-toggle="counter-up">232</span>
-            <p>Happy Clients</p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-          <div class="count-box">
-            <i class="icofont-document-folder"></i>
-            <span data-toggle="counter-up">521</span>
-            <p>Projects</p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-          <div class="count-box">
-            <i class="icofont-live-support"></i>
-            <span data-toggle="counter-up">1,463</span>
-            <p>Hours Of Support</p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-          <div class="count-box">
-            <i class="icofont-users-alt-5"></i>
-            <span data-toggle="counter-up">15</span>
-            <p>Hard Workers</p>
-          </div>
-        </div>
-
-      </div>
-
-    </div>-->    <!-- End Counts -->
-
-    
-
-    <!-- ======= Skills  ======= -->
-    <!--
-    <div class="skills container">
-
-      <div class="section-title">
-        <h2>Skills</h2>
-      </div>
-
-      <div class="row skills-content">
-
-        <div class="col-lg-6">
-
-          <div class="progress">
-            <span class="skill">HTML <i class="val">95%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">CSS <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Bootstrap <i class="val">80%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">JavaScript <i class="val">75%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-lg-6">
-
-          <div class="progress">
-            <span class="skill">Python <i class="val">70%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">PHP <i class="val">65%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">WordPress/CMS <i class="val">80%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Photoshop <i class="val">50%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div><!-- End Skills -->
-
-    
-
-    <!-- ======= Interests ======= -->
-    <!--
-
-    <div class="interests container">
-
-      <div class="section-title">
-        <h2>Others</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-3 col-md-4">
-          <div class="icon-box">
-            <i class="ri-store-line" style="color: #ffbb2c;"></i>
-            <h3>C</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-            <h3>Arduino</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-            <h3>Raspberry Pi</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-          <div class="icon-box">
-            <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-            <h3>Assembly Language</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-database-2-line" style="color: #47aeff;"></i>
-            <h3>Github</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-            <h3>MATLAB</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-            <h3>Multisim</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
-            <h3>PSpice</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-anchor-line" style="color: #b2904f;"></i>
-            <h3>MS Office</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-disc-line" style="color: #b20969;"></i>
-            <h3>CST Studio</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-base-station-line" style="color: #ff5828;"></i>
-            <h3>Linux</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
-            <h3>Android Studio</h3>
-          </div>
-        </div>
-      </div>
-
-    </div><!-- End Interests -->
-
-
-    <!-- ======= Testimonials ======= -->
-    
-    
-
-
-  </section><!-- End About Section -->
-
-  <!-- ======= Resume Section ======= -->
-  <section id="resume" class="resume">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Resume</h2>
-        <p>Check My Resume</p>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-6">
-          <h3 class="resume-title">Sumary</h3>
-          <div class="resume-item pb-0">
-            <h4>Sabboshachi Sarkar</h4>
-            <p><em>Innovative and deadline-driven Web Developer with 1 years of experience designing and developing user-centered web sites from initial concept to final, polished deliverable.</em></p>
-            <p>
-            <ul>
-              <li>RaniBazar, Rajshahi, Bangladesh</li>
-              <li>+88 01768 457598</li>
-              <li>sabboshachi.ruet@gmail.com</li>
-            </ul>
+            <p align="justify">
+              If you share a passion for technology, research, and innovation, I would love to connect and explore potential collaborations. Feel free to explore my portfolio and get in touch to discuss exciting opportunities in the realm of Machine Learning and beyond.
+              <br><br>Thank you for visiting, and I look forward to the possibility of working together!
             </p>
           </div>
+        </div>
 
-          <h3 class="resume-title">Education</h3>
-          <div class="resume-item">
-            <h4>Bachelor of Science</h4>
-            <h4>Electronics and Telecommunication Engineering (ETE)</h4>
-            <h5>2016 - 2017</h5>
-            <p><em>Rajshahi University of Engineering and Technology (RUET), Bangladesh</em></p>
-          </div>
-          <div class="resume-item">
-            <h4>Higher Secondary Certificate (H.S.C)</h4>
-            <h5>2015-2016</h5>
-            <p><em>New Govt. Degree College, Rajshahi, Bangladesh</em></p>
-          </div>
-          <div class="resume-item">
-            <h4>Secondary School Certificate (S.S.C)</h4>
-            <h5>2013 - 2014</h5>
-            <p><em>Naogaon Zilla School, Naogaon, Bangladesh</em></p>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Facts Section ======= -->
+    <section id="facts" class="facts">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Facts</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <i class="bi bi-code-slash"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1.5" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Years</strong> of experience in Machine Learning Engineering</p>
+            </div>
           </div>
 
-          <h3 class="resume-title">EXTRA-CURRICULAR ACTIVITIES</h3>
-          <div class="resume-item">
-            <h4>General Member,</h4>
-            <h4>IEEE RUET Student Branch</h4>
-            <h5>October,2019 - Present</h5>
-            <p><em>IEEE RUET Student Branch is a vibrant student branch (SB) of IEEE. I'm currently a general member here.</em></p>
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="count-box">
+              <i class="bi bi-tools"></i>
+              <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Projects</strong><br> Personal &amp; Academic</p>
+            </div>
           </div>
-          <div class="resume-item">
-            <h4>Executive Committee Member,</h4>
-            <h4>RUET Career Forum</h4>
-            <h5>February,2018 - August,2019</h5>
-            <p><em>RUET Career Forum, established in 2014, is working towards building a bridge from campus to career. Here I worked as a Executive Committee Member. I have worked for the betterment through different career oriented seminars, skill development workshops and thre career fairs where different renowned companies have participated and recruited fresh graduates from different departments.</em></p>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Publication</strong><br> Research &amp; Thesis</p>
+            </div>
           </div>
-          <div class="resume-item">
-            <h4>Committee Member,</h4>
-            <h4>Volunteer for Bangladesh, Rajshahi</h4>
-            <h5>January,2018 - August-2019</h5>
-            <p><em>“Volunteer for Bangladesh” is the youth wing of JAAGO Foundation. It was established in 2011 with the support of U.S Embassy to Bangladesh. I worked here as a Volunteer. During this time I worked in various social development projects.</em></p>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="count-box">
+              <i class="bi bi-award"></i>
+              <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Certifications</strong> <br> Specialization Courses, Workshops &amp; Competition </p>
+            </div>
           </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Facts Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">MACHINE LEARNING ALGORITHMS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">ARTIFICIAL NEURAL NETWROKS (ANN) <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">NATURAL LANGUAGE PROCESSING (NLP) <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">IMAGE PROCESSING <i class="val">5%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">Python <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">C/C++ <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JAVA <i class="val">10%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">DATABASE MANAGEMENT SYSTEM / SQL<i class="val">10%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <br>
+      <br>
+
+      <!-- ======= Interests ======= -->
+      <div class="interests container">
+
+        <div class="section-title">
+          <h2>Others</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-4">
+            <div class="icon-box">
+              
+              <h3>Data Science</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box">
+              <h3>Tensorflow</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
+              <h3>Scikit-Learn</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+            <div class="icon-box">
+              <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
+              <h3>Keras</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-database-2-line" style="color: #47aeff;"></i>
+              <h3>Linux (Basic)</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
+              <h3>Bash</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
+              <h3>IoT</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
+              <h3>MATLAB</h3>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- End Interests -->
+
+    </section><!-- End Skills Section -->
+
+
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume/CV</h2>
+        </div>
+
+        <div>
+          <div class="" data-aos="fade-up">
+            <h3 class="resume-title">EDUCATION</h3>
+
+            <div class="resume-item">
+              <h4>Bachelor of Science (B.Sc)</h4>
+              <p><b><em> Electronics and Telecommunication Engineering (ETE), <br> Rajshahi University of Engineering and Technology (RUET), Bangladesh</em></b></p>
+              <h5>February, 2017 - Present</h5>
+              <p><b>Relevent Courses:</b></p>
+              <p align="justify"><i> 
+                •	Data Structure and Algorithm •	Digital Image Processing •	Digital Communication • Computer Networks •	Numerical Methods in Engineering <br>•	Wireless and Mobile Communication
+              </i></p>
+            </div>            
+          </div>
+
+         
+          <div class="" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">RESEARCH &amp; PUBLICATION</h3>
+            <div class="resume-item">
+              <h4>Web Designer &amp; Developer (Trainee)</h4>
+              <p><b><em>LEDP, ICT Division, Bangladesh</em></b></p>
+              <h5>June, 2020 - October, 2020</h5>
+              <p><b>Technologies used:</b> HTML5, CSS3, Bootstrap, JavaScript, jQuery, PHP, WordPress, WordPress Theme, WordPress Plugins.</p>
+            </div>
+            <div class="resume-item">
+              <h4>Web Designer &amp; Developer (Trainee)</h4>
+              <p><b><em>LEDP, ICT Division, Bangladesh</em></b></p>
+              <h5>June, 2020 - October, 2020</h5>
+              <p><b>Technologies used:</b> HTML5, CSS3, Bootstrap, JavaScript, jQuery, PHP, WordPress, WordPress Theme, WordPress Plugins.</p>
+            </div>
+          </div>
+
+
+
+
+          <div class="" data-aos="fade-up">
+
+            <h3 class="resume-title">EXTRA-CURRICULAR ACTIVITIES</h3>
+
+            <div class="resume-item">
+              <h4>Trainee</h4>
+              <p><b><em>Amra Notun Network, Brac</em></b></p>
+              <h5>May, 2023 - August,2023</h5>
+                <p align="justify">
+                    <em>
+                      ANN is a platform that helps college and university students, 
+                      to learn life skills like leadership and stress management, 
+                      as well as employability skills such as entrepreneurship and project management. 
+                      Facilitator-based teaching and learning processes are used to impart these skills. 
+                      The platform also works for community leadership among young people by involving 
+                      them in different community service projects.
+                    </em>
+                </p>
+                <p><b>Skills & Developments:</b> Project Management, Event Management, Team Work, Leadership, Public Speaking. </p>
+            </div>
+
+            <div class="resume-item">
+              <h4>General Member</h4>
+              <p><b><em>IEEE RUET Student Branch</em></b></p>
+              <h5>October, 2019 - August 2022</h5>
+                <p>
+                    <em>
+                      IEEE RUET Student Branch is one of the most operative student branches in Bangladesh with a vibrant student 
+                      body and experienced mentors. It provides students with a variety of seminars, courses, and workshops to help 
+                      students form professional development and better prepare them to contribute to the advancement of mankind. 
+                      Currently, I'm a General Member here.
+                    </em>
+                </p>
+                <p><b>Skills & Developments:</b> Project Management, Event Management, Team Work, Leadership, Public Speaking. </p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Executive Committee Member</h4>
+              <p><b><em>RUET Career Forum</em></b></p>
+              <h5>February, 2018 - August, 2019</h5>
+              <p align="justify"><em>Here I worked as an Executive Committee Member. I have worked for the betterment through different career-oriented 
+                seminars, skill development workshops and three career fairs where different renowned companies 
+                have participated and recruited fresh graduates from different departments.</em>
+              </p>
+              <p><b>Skills & Developments:</b> Project Management, Event Organizing, Event Management, Career Development, Team Work, Leadership, Public Speaking.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Committee Member</h4>
+              <p><b><em>Volunteer for Bangladesh, Rajshahi</em></b></p>
+              <h5>January, 2018 - August, 2019</h5>
+              <p align="justify"><em>“Volunteer for Bangladesh” is the youth wing of JAAGO Foundation. It was established in 2011 with the 
+                support of U.S Embassy to Bangladesh. I worked here as a Volunteer. During this time, I worked in various 
+                Social Development and Fund-Raising projects</em>
+              </p>
+              <p><b>Skills & Developments:</b> Social Work, Project Management, Event Organizing, Event Management, Career Development, Team Work, Leadership, Public Speaking.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="resume-title" data-aos="fade-up">
+          <h4>For Full CV Please <a href = "https://drive.google.com/file/d/1w218yqRJrlOfK4pUYSrmd7631_dlMbot/view?usp=sharing" target = "_blank">[click here]</a></h4>
         </div>
         
-        <div class="col-lg-6">
-          <h3 class="resume-title">Professional Experience</h3>
-          <div class="resume-item">
-            <h4>Web Designer &amp; Developer (Trainee)</h4>
-            <h5>June,2020 - Present</h5>
-            <p><em>LEDP, ICT Division, Bangladesh</em></p>
-            <p>
-            <ul>
-              <li>Worked in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-              <li>Worked with frontend and backend development  </li>
-              <li>Worked with CMS platform</li>
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Welcome to my blog, a digital canvas where I paint my technical insights, showcase my research and projects, and take you on a journey through my travel experiences. 
+            Join me on this captivating voyage as we delve into the worlds of innovation, exploration, and personal growth. 
+            I hope my words and experiences inspire, inform, and entertain you as we embark on this exciting adventure together.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-ml">Machine Learning</li>
+              <li data-filter=".filter-py">Python</li>
+              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-iot">IOT</li>
+              <li data-filter=".filter-wex">Weekend Experiment</li>
             </ul>
-            </p>
-          </div>
-          <div class="resume-item">
-            <h4>Web Developer</h4>
-            <h5>January,2020 - Present</h5>
-            <p><em>HalfByte.tech</em></p>
-            <p>
-            <ul>
-              <li>Developed numerous site</li>
-              <li>Managed up to 3 projects or tasks at a given time while under pressure</li>
-              <li>Recommended and consulted with clients on  web development</li>
-            </ul>
-            </p>
           </div>
         </div>
-      </div>
 
-      <!-- ======= Skills  ======= -->
-    <div class="skills container">
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
 
-      <div class="section-title">
-        <h2>Skills</h2>
-      </div>
-
-      <div class="row skills-content">
-
-        <div class="col-lg-6">
-
-          <div class="progress">
-            <span class="skill">HTML <i class="val">95%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="col-lg-3 col-md-6 portfolio-item filter-ml">
+            <div class="">
+              <div class="card card-blog">
+                <div class="card-img">
+                  <a href="blog-single.html"><img src="assets/img/Portfolio_01.jpg" alt="" class="img-fluid"></a>
+                </div>
+                <div class="card-body">
+                  <div class="card-category-box">
+                    <div class="card-category">
+                      <h6 class="category">Machine Learning</h6>
+                    </div>
+                  </div>
+                  <h3 class="card-title"><a href="blog-single.html">Analysis of Stock Market Forecasting Utilizing LSTM Approach</a></h3>
+                  <p class="card-description">
+                    <i>Final Year Thesis Project 2023</i>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="progress">
-            <span class="skill">CSS <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="col-lg-3 col-md-6 portfolio-item filter-iot">
+            <div class="">
+              <div class="card card-blog">
+                <div class="card-img">
+                  <a href="blog-single.html"><img src="assets/img/ACL.jpg" alt="" class="img-fluid"></a>
+                </div>
+                <div class="card-body">
+                  <div class="card-category-box">
+                    <div class="card-category">
+                      <h6 class="category">IoT</h6>
+                    </div>
+                  </div>
+                  <h3 class="card-title"><a href="blog-single.html">Automated Car License Plate Detection and Billing System</a></h3>
+                  <p class="card-description">
+                    Academic Project, 2021
+                  </p>
+                </div>
+              </div>
+
+
             </div>
           </div>
 
-          <div class="progress">
-            <span class="skill">Bootstrap <i class="val">80%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="col-lg-3 col-md-6 portfolio-item filter-iot">
+            <div class="">
+              <div class="card card-blog">
+                <div class="card-img">
+                  <a href="blog-single.html"><img src="assets/img/SAR.jpg" alt="" class="img-fluid"></a>
+                </div>
+                <div class="card-body">
+                  <div class="card-category-box">
+                    <div class="card-category">
+                      <h6 class="category">IoT</h6>
+                    </div>
+                  </div>
+                  <h3 class="card-title"><a href="blog-single.html">Smart Road Accident Detection and Communication System</a></h3>
+                  <p class="card-description">
+                    Academic Project, 2019
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="progress">
-            <span class="skill">JavaScript <i class="val">75%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+            <div class="">
+              <div class="card card-blog">
+                <div class="card-img">
+                  <a href="blog-single.html"><img src="assets/img/LEDP.jpg" alt="" class="img-fluid"></a>
+                </div>
+                <div class="card-body">
+                  <div class="card-category-box">
+                    <div class="card-category">
+                      <h6 class="category">Web</h6>
+                    </div>
+                  </div>
+                  <h3 class="card-title"><a href="blog-single.html">JavaScript Based Web Application</a></h3>
+                  <p class="card-description">
+                    LEDP Class Project <br> 2020
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-
         </div>
 
-        <div class="col-lg-6">
-
-          <div class="progress">
-            <span class="skill">Python <i class="val">70%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">PHP <i class="val">65%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">WordPress/CMS <i class="val">80%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Photoshop <i class="val">50%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div><!-- End Skills -->
-
-    <!-- ======= Interests ======= -->
-    <div class="interests container">
-
-      <div class="section-title">
-        <h2>Others</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-3 col-md-4">
-          <div class="icon-box">
-            <i class="ri-store-line" style="color: #ffbb2c;"></i>
-            <h3>C</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-            <h3>Arduino</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-            <h3>Raspberry Pi</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-          <div class="icon-box">
-            <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-            <h3>Assembly Language</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-database-2-line" style="color: #47aeff;"></i>
-            <h3>Github</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-            <h3>MATLAB</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-            <h3>Multisim</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
-            <h3>PSpice</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-anchor-line" style="color: #b2904f;"></i>
-            <h3>MS Office</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-disc-line" style="color: #b20969;"></i>
-            <h3>CST Studio</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-base-station-line" style="color: #ff5828;"></i>
-            <h3>Linux</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
-            <h3>Android Studio</h3>
-          </div>
-        </div>
-      </div>
-
-    </div><!-- End Interests -->
-
-
-
-
-      <div class="resume-title">
-      <h4>For Full CV Please <a href = "cv/index.html" target = "_blank">click here...</a></h4>
-      </div>
-
-
-
-    </div>
-  </section><!-- End Resume Section -->
-
-  <!-- ======= project Section ======= -->
-  <section id="services" class="services">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Projects</h2>
-        <p>My Projects</p>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bxl-dribbble"></i></div>
-            <h4><a href="#">Automated Car License Plate Detection and Billing System</a></h4><br>
-            <p>6th Semester Class Project, (on going)</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-tachometer"></i></div>
-            <h4><a href="https://github.com/sabboshachi/LEDP_JavaScript_WebApplication_Assignment.git" target="_blank">LEDP JavaScript Web App..</a></h4><br>
-            <p>LEDP Class Project, 2020</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-tachometer"></i></div>
-            <h4><a href="#">Smart Road Accident Detection and Communication System</a></h4><br>
-            <p>4th Semester Class Project, 2019</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-world"></i></div>
-            <h4><a href="https://github.com/sabboshachi/LCD-Thermometer-with-temperature-alert-using-Arduino-Uno.git" target="_blank">LCD Thermometer with Temperature Alert Using Arduino Uno</a></h4><br>
-            <p>(Personal Project)</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-slideshow"></i></div>
-            <h4><a href="https://github.com/sabboshachi/Ultrasonic-Sensor-with-Arduino-LCD-Project-for-Measuring-Distance.git" target="_blank">Ultrasonic Sensor with Arduino LCD Project for Measuring Distance</a></h4><br>
-            <p>(Personal Project)</p>
-          </div>
+        <div class="resume-title" data-aos="fade-up">
+          <h4>All My Projects<a href = "index_portfolio.html" target = "_blank"> [click here]</a></h4>
         </div>
 
       </div>
+    </section><!-- End Portfolio Section -->
 
-    </div>
-  </section><!-- End Services Section -->
+    <!-- ======= Blog Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
 
-  <!-- ======= Achievements Section ======= -->
-  <section id="portfolio" class="portfolio">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Ahievements</h2>
-        <p>My Achievements</p>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-12 d-flex justify-content-center">
-          <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-IEEE">IEEE</li>
-            <li data-filter=".filter-Olympiads">Olympiads</li>
-            <li data-filter=".filter-Workshop">Workshop</li>
-            <li data-filter=".filter-School">School</li>
-            <li data-filter=".filter-Others">Others</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row portfolio-container">
-
-        <!-- ======= IEEE ======= -->
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-IEEE">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/pic1.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>IEEE</h4>
-              <p>Membership Certificate</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/pic1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
+        <div class="section-title">
+          <h2>Blog</h2>
+          <p>
+            Welcome to my blog, a digital canvas where I paint my technical insights, showcase my research and projects, and take you on a journey through my travel experiences. 
+            Join me on this captivating voyage as we delve into the worlds of innovation, exploration, and personal growth. 
+            I hope my words and experiences inspire, inform, and entertain you as we embark on this exciting adventure together. These are some leatest blogs: </p>
         </div>
 
-        <!-- ======= Olympiads ======= -->
-
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-Olympiads">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/math02.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Math Olympiad 2016</h4>
-              <p>Math Olympiad Bangladesh</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/math02.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-Olympiads">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/math01.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Math Olympiad 2015</h4>
-              <p>Math Olympiad Bangladesh</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/math01.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-Olympiads">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/po01.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Physics Olympiad 2015</h4>
-              <p>Bangladesh Physics Olympiad</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/po01.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-
-        <!-- ======= Workshop ======= -->
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-Workshop">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/drone.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Workshop on Making Drone</h4>
-              <p>Bangladesh Science Society</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/drone.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-Workshop">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/robot.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Workshop on <br> Skill Development on Robotics</h4>
-              <p>Bangladesh Robotics Foundation</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/robot.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- ======= School ======= -->
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-School">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/school_10.1.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Annual Cultural Event <br> Class-10</h4>
-              <p>Naogaon Zilla School</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/school_10.1.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-School">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/school_10.2.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Annual Cultural Event <br> Class-10</h4>
-              <p>Naogaon Zilla School</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/school_10.2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-School">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/school_9.1.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Annual Cultural Event <br> Class-9</h4>
-              <p>Naogaon Zilla School</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/school_9.1.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-School">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/school_9.3.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Annual Cultural Event <br> Class-9</h4>
-              <p>Naogaon Zilla School</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/school_9.3.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-School">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/school_8.1.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Annual Cultural Event <br> Class-8</h4>
-              <p>Naogaon Zilla School</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/school_8.1.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-School">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/school_8.2.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Annual Cultural Event <br> Class-8</h4>
-              <p>Naogaon Zilla School</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/school_8.2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-School">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/school_7.1.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Annual Cultural Event <br> Class-7</h4>
-              <p>Naogaon Zilla School</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/school_7.1.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-School">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/school_7.2.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Annual Cultural Event <br> Class-7</h4>
-              <p>Naogaon Zilla School</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/school_7.2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-School">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/school_7.3.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Annual Cultural Event <br> Class-7</h4>
-              <p>Naogaon Zilla School</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/school_7.3.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-School">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/school_5.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Annual Cultural Event <br> Class-5</h4>
-              <p>Naogaon Zilla School</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/school_5.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- ======= Others ======= -->
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-Others">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/othr01.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Youth Leadership Development</h4>
-              <p>BSB-Cambrian Education Group</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/othr01.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-Others">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/othr02.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Student Performance Award 2016</h4>
-              <p>BSB-Cambrian Education Group</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/othr02.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-Others">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/othr03.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Independence Day 2010</h4>
-              <p>Department of Public Libraries <br> Ministry of Cultural Affairs <br> Bangladesh</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/othr03.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-Others">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/othr04.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Victory Day 2010</h4>
-              <p>Department of Public Libraries <br> Ministry of Cultural Affairs <br> Bangladesh</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/othr04.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-Others">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/othr05.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Independence Day 2011</h4>
-              <p>Department of Public Libraries <br> Ministry of Cultural Affairs <br> Bangladesh</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/othr05.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-Others">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/othr06.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>International Mother Language Day 2011</h4>
-              <p>Department of Public Libraries <br> Ministry of Cultural Affairs <br> Bangladesh</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/othr06.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-Others">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/othr07.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>National Mourning Day 2010</h4>
-              <p>Department of Public Libraries <br> Ministry of Cultural Affairs <br> Bangladesh</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/othr07.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-Others">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/othr111.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Student Performance Award 2014</h4>
-              <p>Medico</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/othr111.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-Others">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/othr112.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Student Performance Award 2012-13</h4>
-              <p>Waymark Ideal College</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/othr112.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section><!-- End Portfolio Section -->
-
-  <!-- ======= Blog Section ======= -->
-  <section id="blog" class="resume">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Blog</h2>
-        <p>My Blog</p>
-      </div>
-
-      <div>
-        <div>
+        <div class="row" data-aos="fade-up">
           
-          <h2 class="title font-weight-bolder text-center">Surface Duo is the smartest foldable yet..!</h2>
-          <p>Sabboshachi Sarkar, (Sep 6)<p>
-          <div>
-            <div class="pt-3">
-              <p><em>Why it might be a better device than the more capable Samsung Folds.</em></p>
-              <img src = "assets\img\blog2.png" class="mx-auto d-block img-thumbnail" alt="">
+          <div class="col-md-4" style="padding-bottom: 5px;">
+
+            <div class="card card-blog">
+              <div class="card-img">
+                <a href="blog-single.html"><img src="assets/img/my_post_1.jpg" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Travel</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="blog-single.html">Kedarnath: A Spiritual Odyssey in the Heart of the Himalayas</a></h3>
+                <p class="card-description">
+                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
+                  a pellentesque nec,
+                  egestas non nisi.
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <a href="#">
+                    <span class="author">Sabboshachi Sarkar</span>
+                  </a>
+                </div>
+                <div class="post-date">
+                  <span class="bi bi-calendar-date"></span> 23 Feb 1996
+                </div>
+              </div>
             </div>
-            <div class = "pt-3">
-              <p><em>There’s nothing cooler than flipping your phone into half before putting into your pocket and nothing more satisfying than slamming it shut after a heated up conversion. That’s why foldables are back.
-                After the mere successes of Samsung folds, flips and Motorola Razr, Microsoft is saying Hi to the folding world. But in a different approach. And looks like this approach has some brains behind it. Let’s talk why.</em>
-              <a href = "https://medium.com/halfbyte-bangla/surface-duo-is-the-smartest-foldable-yet-edff77c1b43b" target="_blank"> Click here to read full article...</a></p>
-            </div>
+
           </div>
-          <br><br><br><br>
+
+          <div class="col-md-4"  style="padding-bottom: 5px;">
+
+            <div class="card card-blog">
+              <div class="card-img">
+                <a href="blog-single.html"><img src="assets/img/my_post_2.jpg" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Community Project</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="blog-single.html">"Project Khadija" - The Light of Spirit</a></h3>
+                <p class="card-description">
+                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, 
+                  convallisc onvall isconv alliscon allis
+                  a  isconv alliscon alli  isconv alliscon alli
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <a href="#">
+                    <span class="author">Sabboshachi Sarkar</span>
+                  </a>
+                </div>
+                <div class="post-date">
+                  <span class="bi bi-calendar-date"></span> 23 Feb 1996
+                </div>
+              </div>
+            </div>
 
 
-          <h2 class="title font-weight-bolder text-center">Do you really need the fluidity of 90/120 hz displays..?</h2>
-          <p>Sabboshachi Sarkar, (Sep 3)<p>
-          <div>
-            <div class = "pt-3" >
-              <img src = "assets\img\blog1.jpeg" class="mx-auto d-block img-thumbnail" alt="">
-            </div>
-            <div class = "pt-3">
-              <p><em>Good phones have gotten cheaper and cheap phones have gotten better. Its truly the era of mobile phone evolution that we all have been asking for. But after this evolution, phones are no more exciting as they have been in the past. You guessed it, every freaking phone, be it $1500 ultra premiums or $100 budget ones! All of them got vivid high resolution screens, hundreds of megapixels in cameras, thousands of mAh’s in batteries. So what’s there to differentiate the good, the bad and the ugly ?</em>
-              <a href = "https://medium.com/halfbyte-bangla/do-you-really-need-the-fluidity-of-90-120-hz-displays-f63b35cb300d" target="_blank"> Click here to read full article...</a></p>
+          </div>
+
+          <div class="col-md-4"  style="padding-bottom: 10px;">
+
+
+            <div class="card card-blog">
+              <div class="card-img">
+                <a href="blog-single.html"><img src="assets/img/my_post_3.jpg" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Tech Talk</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="blog-single.html">Do you really need the fluidity of 90/120 hz displays?</a></h3>
+                <p class="card-description">
+                  Good phones have gotten cheaper and cheap phones have gotten better. Its truly the era of mobile phone evolution <a href="#">continue reading...</a>
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <a href="#">
+                    <span class="author">Sabboshachi Sarkar</span>
+                  </a>
+                </div>
+                <div class="post-date">
+                  <span class="bi bi-calendar-date"></span> 23 Feb 1996
+                </div>
+              </div>
             </div>
           </div>
-          <br><br><br><br>
+        </div>
+
+        <div class="resume-title" data-aos="fade-up">
+          <h4>Read More Blogs <a href = "index_blog.html" target = "_blank"> [click here]</a></h4>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg" >
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Courses &amp; Workshops</h2>
+          <p>This section provides a detailed summary of the workshops, courses, and certifications 
+            I have acquired during my educational journey. I have actively engaged in numerous online and offline courses and workshops to enhance my skills, and 
+            I've also had the opportunity to attend various science conferences.</p>
+        </div>
+
+        <div id="" class="resume" >
+          <div class="container">     
+              <div class="" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="resume-title">Courses</h3>
+                <div class="resume-item">
+                  <h4>IBM Data Science Professional Certificate</h4>
+                  <p><b><em>Coursera</em></b></p>
+                  <ul>
+                    <li><b>Course 01 : </b><em>What is Data Science?</em> </li>
+                    <li><b>Course 02 : </b><em>Tools for Data Science</em> </li>
+                    <!-- <li>Machine Learning</li>
+                    <li>Python</li>
+                    <li>Web</li>
+                    <li>IOT</li>
+                    <li>Weekend Experiment</li> -->
+                  </ul>
+                  <p><b>Technologies used:</b> Jupyter Notebook</p>
+                </div>
+                
+                <h3 class="resume-title">Workshops</h3>
+                <div class="resume-item">
+                  <h4>PCB Design &amp;Fabricaiton </h4>
+                  <p><b><em>Department of ETE, RUET</em></b></p>
+                  <p><b>Technologies used:</b> Multisim</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Location:</h4>
+                  <p>1/2 DebiShing Para, Rajshahi, Bangladesh</p>
+              </div>
+
+              <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>sabboshachi.ruet@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+88 01768 487598</p>
+              </div>
+
+              <iframe src="https://maps.google.com/maps?q=24%C2%B022'08.8%22N%2088%C2%B037'25.6%22E&t=&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="https://formspree.io/f/xknkqgza" method="POST" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="Name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="Email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="Subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="Message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
 
         </div>
+
       </div>
-    </div>
-  </section><!-- End Resume Section -->
+    </section><!-- End Contact Section -->
 
+  </main><!-- End #main -->
 
-
-
-
-  <!-- ======= Contact Section ======= -->
-  <section id="contact" class="contact">
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
     <div class="container">
-
-      <div class="section-title">
-        <h2>Contact</h2>
-        <p>Contact Me</p>
+      <div class="copyright">
+        <strong><span></span></strong>
       </div>
-
-      <div class="row mt-2">
-
-        <div class="col-md-6 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-map"></i>
-            <h3>My Address</h3>
-            <p>RaniBazar, Ghoramara, Boalia, Rajshahi.</p>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-share-alt"></i>
-            <h3>Social Profiles</h3>
-            <div class="social-links">
-              <a href="https://twitter.com/sabboshachi71" target="_blank"  class="twitter"><i class="icofont-twitter"></i></a>
-              <a href="https://www.facebook.com/Sabboshachi/" target="_blank"  class="facebook"><i class="icofont-facebook"></i></a>
-              <a href="https://www.instagram.com/_sabboshachi_/" target="_blank"  class="instagram"><i class="icofont-instagram"></i></a>
-              <a href="https://github.com/sabboshachi"  target="_blank" class="github"><i class="icofont-github"></i></a>
-              <a href="https://www.linkedin.com/in/sabboshachi-sarkar-8b5573154/" target="_blank"  class="linkedin"><i class="icofont-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-envelope"></i>
-            <h3>Email Me</h3>
-            <p>sabboshachi.ruet@gmail.com</p>
-          </div>
-        </div>
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <a href = "https://web.whatsapp.com/send?phone=8801768457598" target="_blank"><i class="bx bx-phone-call"></i></a>
-            <h3>Call Me</h3>
-            <p>+88 01768 457598</p>
-          </div>
-        </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+         <a href="https://bootstrapmade.com/"></a>
       </div>
-
-      <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
-        <div class="form-row">
-          <div class="col-md-6 form-group">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-            <div class="validate"></div>
-          </div>
-          <div class="col-md-6 form-group">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-            <div class="validate"></div>
-          </div>
-        </div>
-        <div class="form-group">
-          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-          <div class="validate"></div>
-        </div>
-        <div class="form-group">
-          <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-          <div class="validate"></div>
-        </div>
-        <div class="mb-3">
-          <div class="loading">Loading</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Your message has been sent. Thank you!</div>
-        </div>
-        <div class="text-center"><button type="submit">Send Message</button></div>
-      </form>
-      
-      
-      
-      <form action="https://formspree.io/f/xknkqgza" method="POST">
-        <label>
-          Your email:
-          <input type="email" name="_replyto">
-        </label>
-        <label>
-          Your message:
-          <textarea name="message"></textarea>
-        </label>
-        <!-- your other form fields go here -->
-        <button type="submit">Send</button>
-      </form>
-
     </div>
-  </section><!-- End Contact Section -->
 
-  <div class="credits">
-    <!-- All the links in the footer should remain intact. -->
-    <!-- You can delete the links only if you purchased the pro version. -->
-    <!-- Licensing information: https://bootstrapmade.com/license/ -->
-    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/personal-free-resume-bootstrap-template/ -->
-    <a href="https://bootstrapmade.com/"></a>
-  </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
