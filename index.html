@@ -40,6 +40,12 @@
         cursor: default;
         transform: scale(1.05);
       }
+
+      .timeline-card-smaller {
+        margin-top: 10px;
+        padding: 5px 10px;
+        border-radius: 5px; /* Maintain border radius */
+      } 
     </style>
 
     <noscript>
@@ -92,7 +98,7 @@
                 <div class="header-bio mt-3">
                   <div data-aos="zoom-in" data-aos-delay="0">
                     <h2 class="h1">Sabboshachi Sarkar</h2>
-                    <p>Intern Software Engineer (C/C++/Embedded) at BJIT</p>
+                    <p>Software Engineer (C/C++/Embedded) at BJIT</p>
                   </div>
                   
                   <div class="header-social mb-3 d-print-none" data-aos="zoom-in" data-aos-delay="200">
@@ -292,13 +298,13 @@
                   <!-- <button class="button2">GitGerrit</button> -->
                 </div>
               </li>
-              <!-- <li><b>Technical Tool:</b>
+              <li><b>Technical Tool:</b>
                 <div style="padding-left: 2em;">
                   <button class="button2">Jira</button>
-                  <button class="button2">Redmine</button>
+                  <!-- <button class="button2">Redmine</button> -->
                   <button class="button2">Trello</button>
                 </div>
-              </li> -->
+              </li>
             </ul>
           </div>
 
@@ -311,53 +317,43 @@
 
       <!-- ########################## Work Experience ########################## -->
 
+      <!-- 
+        This section represents the "Experience" part of a personal or professional webpage.
+        It includes a timeline of various job roles and internships held by the individual.
+        
+        Each job role is encapsulated within a "timeline-card" div, which contains:
+        - Job title and company name
+        - Duration of employment
+        - Responsibilities and technologies used
+
+        The timeline includes the following positions:
+        1. Software Engineer at BJIT (March 2025 - Present)
+           - Responsibilities: Designing and developing projects with microcontrollers, implementing CAN network protocols, R&D for client projects.
+           - Technologies: C/C++, Python, Arduino, STM32, CAN Protocol
+
+        2. Embedded Software Engineer (Intern) at BJIT (November 2024 - February 2025)
+           - Responsibilities: Similar to the Software Engineer role.
+           - Technologies: C/C++, Python, Arduino, STM32, CAN Protocol
+
+        3. Product Analyst (Part-Time) at Edu-Explorer (January 2024 - November 2024)
+           - Responsibilities: Market analysis, customer sentiment analysis, machine learning predictions, product strategy enhancement, content creation, marketing.
+           - Technologies: Pandas, Matplotlib, Database/SQL, PowerBi, MS Office
+
+        4. Web Designer & Developer (Trainee) at LEDP, ICT Division, Bangladesh (June 2020 - August 2020)
+           - Responsibilities: Completed a freelancing skill development program, specialized in web design and development, applied skills to build web applications.
+           - Technologies: HTML5, CSS3, Bootstrap, JavaScript, WordPress, WordPress Themes and Plugins
+      -->
       <div class="shadow-1-strong bg-white my-5 p-5" id="experience">
         <div class="work-experience-section">
           <h2 class="h2 fw-light mb-4">Experience</h2>
           <div class="timeline">
             
-            <!-- <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="0">
-              <div class="timeline-head px-4 pt-3">
-                <div class="h5">Machine Learning (Intern) <span class="text-muted h6">at Encryptix</span></div>
-              </div>
-              <div class="timeline-body px-4 pb-4">
-                <div class="text-muted text-small mb-3">June, 2024 - July, 2024</div> -->
-                <!-- <div align="justify"> -->
-                  <!-- I had the opportunity to participate in a four-week online internship program at Encryptix, 
-                  one of the leading software companies in India. Throughout this internship, I successfully completed five machine 
-                  learning projects. This experience greatly enhanced my understanding of machine learning and provided me with 
-                  valuable hands-on experience, which has been pivotal in advancing my professional career. <br> -->
-                  <!-- <div>
-                    <ul align="justify">
-                      <li>Participated in a four-week online internship program at Encryptix, a leading software company in India</li>
-                      <li>Successfully completed five machine learning projects during the internship</li>
-                      <li>Enhanced understanding of machine learning through practical experience</li>
-                      <li>Gained valuable hands-on experience that advanced my professional career</li>
-                    </ul>
-                  </div>
-                  <a href="#">Find more details here.</a></div>
-                <br>
-                <div align="justify"><b>Technologies Used:</b> Jupyter Notebook</div>
-              </div>
-            </div> -->
-
             <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="0">
               <div class="timeline-head px-4 pt-3">
-                <div class="h5">Embedded Software Engineer (Intern)<span class="text-muted h6"> at BJIT</span></div>
+                <div class="h5">Software Engineer <span class="text-muted h6"> at BJIT</span></div>
               </div>
               <div class="timeline-body px-4 pb-4">
-                <div class="text-muted text-small mb-3">November, 2024 - Present</div>
-                <!-- <div>
-                  <ul align="justify">
-                    <li>Analyzed market trends and business models</li>
-                    <li>Conducted customer sentiment analysis</li>
-                    <li>Predicted outcomes using machine learning algorithms</li>
-                    <li>Enhanced product strategy</li>
-                    <li>Contributed to content creation</li>
-                    <li>Participated in marketing and promotional events</li>
-                  </ul>
-                </div> -->
-
+                <div class="text-muted text-small mb-3">March, 2025 - Present</div>
                 <div>
                   <div align="justify"><b>Responsibilities:</b></div>
                   <ul align="justify">
@@ -366,13 +362,24 @@
                     <li>Conducted research and development for client-specific project requirements.</li>
                   </ul>
                 </div>
-                
-                <!-- <div align="justify">With a workforce exceeding 650 employees, BJIT ranks among the largest software companies in Bangladesh. 
-                  The company delivers high-quality IT services across various domains, including Artificial Intelligence and 
-                  Deep Learning, Fintech and Blockchain, Mobile Application and IoT development, Web Application solutions, Digital Marketing, and more.
-                </div></br> -->
-
                 <div align="justify"><b>Technologies Used:</b> C/C++, Python, Arduino, STM32, CAN Protocol</div>
+              </div>
+              <div class="timeline-card" data-aos="fade-in" data-aos-delay="0">
+                <div class="timeline-head px-4 pt-3">
+                  <div class="h5">Software Engineer (Intern)<span class="text-muted h6"> at BJIT</span></div>
+                </div>
+                <div class="timeline-body px-4 pb-4">
+                  <div class="text-muted text-small mb-3">November, 2024 - February, 2025</div>
+                  <div>
+                    <div align="justify"><b>Responsibilities:</b></div>
+                    <ul align="justify">
+                      <li>Designed and developed projects utilizing Arduino, Raspberry Pi, and STM32 microcontrollers</li>
+                      <li>Implemented vehicle interface management systems using CAN network protocols.</li>
+                      <li>Conducted research and development for client-specific project requirements.</li>
+                    </ul>
+                  </div>
+                  <div align="justify"><b>Technologies Used:</b> C/C++, Arduino, Raspberry Pi, STM32, UART, I2C, SPI, CAN</div>
+                </div>
               </div>
             </div>
             
@@ -393,11 +400,6 @@
                     <li>Participated in marketing and promotional events</li>
                   </ul>
                 </div>
-                <!-- <div>Edu Explorer is an EdTech startup that creates digital educational content for school and college 
-                  students through its app. In my role as a Product Analyst at Edu Explorer, I analyze market trends, assess 
-                  business models, and predict future outcomes using advanced machine learning algorithms to enhance our product 
-                  strategy. Additionally, I contribute to content creation and participate in promotional events.</div> -->
-
                 <div align="justify"><b>Technologies Used:</b> Pandas, Matplotlib, Database/SQL, PowerBi, MS Office.</div>
               </div>
             </div>
@@ -416,31 +418,9 @@
                     <li>Applied skills to construct various web applications</li>
                   </ul>
                 </div>
-                <!-- <div>Edu Explorer is an EdTech startup that creates digital educational content for school and college 
-                  students through its app. In my role as a Product Analyst at Edu Explorer, I analyze market trends, assess 
-                  business models, and predict future outcomes using advanced machine learning algorithms to enhance our product 
-                  strategy. Additionally, I contribute to content creation and participate in promotional events.</div> -->
-
                 <div align="justify"><b>Technologies Used:</b> HTML5, CSS3, Bootstrap, JavaScript, WordPress, WordPress Themes and Plugins.</div>
               </div>
             </div>
-
-            <!-- <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="400">
-              <div class="timeline-head px-4 pt-3">
-                <div class="h5">Web Designer & Developer (Trainee) <span class="text-muted h6">at LEDP, ICT Division, Bangladesh</span></div>
-              </div>
-              <div class="timeline-body px-4 pb-4">
-                <div class="text-muted text-small mb-3">June 2020 to August 2020</div>
-                <div align="justify">I heve completed a 200-hour government-funded freelancing skill development program known as the Learning and Earning Development 
-                  Project (LEDP), specializing in Web Design and Development. Throughout the training, I gained proficiency in fundamental web 
-                  development technologies, including HTML5, CSS3, Bootstrap, basic JavaScript, and WordPress. I applied these skills to construct 
-                  various web applications.<br><a href="#">Find more details here.</a></div>
-                <br>
-                <div align="justify"><b>Technologies Used:</b> HTML5, CSS3, Bootstrap, JavaScript, WordPress, WordPress Themes and Plugins.</div>
-              </div>
-              
-            </div> -->
-
           </div>
         </div>
       </div>
@@ -626,6 +606,29 @@
       <div class="shadow-1-strong bg-white my-5 p-5 d-print-none" id="project">
         <div class="project-section">
           <h2 class="h2 fw-light mb-4">Projects</h2>
+
+          <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="200">
+            <div class="timeline-head px-4 pt-3">
+              <div class="h5">6 DOF Robotic Arm Application <a href="#" target="_blank"> </a> </span></div>
+            </div>
+            <div class="timeline-body px-4 pb-4">
+              <div class="text-muted text-small mb-3">Internship Project <br>2024</div>
+              <div>
+                <ul align="justify">
+                  <li>Developed a 6-DOF robotic arm utilizing STM32 Nucleo board and PCA9685 motor driver, enhancing precision and range of motion.</li>
+                  <li>Programmed and controlled the arm's movements through efficient implementation of the I2C communication protocol.</li>
+                  <li>Applied advanced engineering principles to integrate hardware and software, successfully achieving targeted functional requirements and operational goals.</li>
+                  <li>Contributed to the design and testing phases, ensuring robust performance and reliability of the robotic arm in practical applications.</li>
+                </ul>
+              </div>
+              <div><b>Technologies used:</b> STM32, Arduino, C Language, 6 DOF Robotic Arm, PCA9685 Motor Driver, I2C Communication Protocol</div>
+            </div>
+          </div>
+
+
+
+
+
 
 
           <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="200">
